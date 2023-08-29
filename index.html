@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Time Table Scheduler</title>
+    <style>
+        body {
+            font-family: Helvectica, sans-serif;  
+            margin: 0;
+            padding: 0;
+            background: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            background: linear-gradient(to right, #0053ba, #00addb);
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            color: #fff;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            width: 200px;
+            background: #fff;
+            color: #0066cc;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .btn img {
+            margin-right: 10px;
+            max-height: 20px;
+        }
+
+        .btn:hover {
+            background-color: #0066cc;
+            color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:focus {
+            outline: none;
+            background-color: #0066cc;
+            color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Time Table Scheduler</h1>
+        <div class="btn-container">
+            <a class="btn" href="welcome.html">Create Time Table</a>
+            <a class="btn" href="history.php">History</a>
+        </div>
+    </div>
+</body>
+</html>

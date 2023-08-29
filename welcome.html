@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Table Scheduler</title>
+    <style>
+        body {
+            font-family: Helvectica, sans-serif;  
+            margin: 0;
+            padding: 0;
+            background: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            background: linear-gradient(to right, #0053ba, #00addb);
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            color: #fff;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        .input-group input[type="text"],
+        .input-group input[type="number"],
+        .input-group select {
+            width: 480px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            color: #333;
+            background: #f0f2f5;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background: #fff;
+            color: #0066cc;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0066cc;
+            color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        input[type="submit"]:focus {
+            outline: none;
+            background-color: #0066cc;
+            color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        ::placeholder {
+            color: #999;
+        }
+
+
+        .btn {
+            background: #fff;
+            color: #0066cc;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #0066cc;
+            color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:focus {
+            outline: none;
+            background-color: #0066cc;
+            color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+           
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter the Details</h1>
+        <form action="schedule_timetable.php" method="post">
+            <div class="input-group">
+                <input type="text" placeholder="Department Name" id="department" name="department" required>
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Class Name" id="class" name="class" required>
+            </div>
+            <div class="input-group">
+                <input type="number" placeholder="Number of Days" id="days" name="days" required>
+            </div>
+            <div class="input-group">
+                <input type="number" placeholder="Number of Periods in a Day" id="periods" name="periods" required>
+            </div>
+            <div class="input-group">
+                <select id="semester" name="semester" required>
+                    <option value="1">Semester I</option>
+                    <option value="2">Semester II</option>
+                    <option value="3">Semester III</option>
+                    <option value="4">Semester IV</option>
+                    <option value="5">Semester V</option>
+                    <option value="6">Semester VI</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Subjects (comma separated)" id="subjects" name="subjects" required>
+            </div>
+            <input type="submit" value="Schedule Time Table">
+        </form>
+    </div>
+</body>
+</html>
+
+
