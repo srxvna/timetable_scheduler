@@ -1,4 +1,5 @@
 # timetable_scheduler
+https://srxvna.github.io/timetable_scheduler/
 Steps:
 1. Extract the project file.
 2. Copy the main project folder.
