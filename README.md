@@ -1,6 +1,6 @@
 # timetable_scheduler
 https://srxvna.github.io/timetable_scheduler/
-Steps:
+# Steps:
 1. Extract the project file.
 2. Copy the main project folder.
 3. Paste in xampp/htdocs/
